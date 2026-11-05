@@ -1,0 +1,4 @@
+split,observations,direct_agreement,direct_agreement_pct,both_correct,crb_correct_syn_wrong,crb_wrong_syn_correct,both_wrong,strict_reference_precision_pct,at_least_one_correct_pct,high_confidence_agreement,high_confidence_both_correct,high_confidence_both_wrong
+random,95257,37928,39.81649642545955,37598,290,14,26,99.12993039443155,99.93144906137945,21502,21484,4
+group,97970,36570,37.32775339389609,36303,197,7,63,99.26989335520919,99.82772764561116,22133,22118,3
+extreme_ood,6158,1041,16.904839233517375,1020,9,1,11,97.98270893371757,98.9433237271854,442,440,2

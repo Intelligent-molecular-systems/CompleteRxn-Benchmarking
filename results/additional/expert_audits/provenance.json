@@ -1,0 +1,20 @@
+{
+  "metric": "v2",
+  "version": "2.3.0",
+  "rdkit": "2025.09.5",
+  "policies": {
+    "target_audit_stereo": true,
+    "metric_audit_stereo": false
+  },
+  "sha256": {
+    "data/Expert_curation/control_reactions.csv": "15c89afe403c3f13a04fac425510494597fe8f19295435509c86e07c1f8bc16f",
+    "data/Expert_curation/expert_votes.csv": "0c7050ec245475d3b4982e66fe98d9a22c548a9749d88a7c62691e543bfbec72",
+    "results/archive/metric_v1/additional/equivalence_metric_audit/audit_key.csv": "4d9ac3c6893e2e3f540443616ea8c0a52059021574208515af95717218422bd3",
+    "results/archive/metric_v1/additional/equivalence_metric_audit/audit_sample_blinded.csv": "4e26295010f3c8506d766fa5bd1e94e88bba4942b0c73446b28843dbb137a825",
+    "results/archive/metric_v1/additional/equivalence_metric_audit/expert_audit_details.csv": "1de2de30e6f88519f766fb7c514a859317aa45649a158e514bd3ed20bee5f41c",
+    "utils/scoring.py": "88c432e96e183659f98be5786a3ada78603337799a6b5c7d23a3b09a11c8cd84",
+    "utils/reaction_balance.py": "e32936434b9efb803b8e90c25021d52e2bf24d0a5a4383d130c124ef078500d4",
+    "src/completerxn/equivalence.py": "26feb82b37d65fb057caf63cf46ea4b4681614ee9b0a7f601edbd1845950a719",
+    "src/completerxn/balance.py": "b91533999f94c3c8c808a1a13de6019c2bcb56242298eba0771457cc91e49066"
+  }
+}

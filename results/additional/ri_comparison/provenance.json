@@ -1,0 +1,34 @@
+{
+  "metric": "v2",
+  "version": "2.3.0",
+  "rdkit": "2020.09.1",
+  "policies": {
+    "stereo": false,
+    "requires_solved": true,
+    "paired": true
+  },
+  "sha256": {
+    "results/SynRBL/eval_all_splits_CanonicalReaction/full_results.csv": "fb888230d0a41f6bd5bf699ce08fb6b37e5208312ad832bbbbf5c20f451d5faa",
+    "results/main/predictions/synrbl/eval_all_splits_noRI_complete/full_results.csv": "b2f344da710a4179cc98324272f4e7566bf30828bf0d8c56c1a7dbb02fb7c252",
+    "results/main/scores/per_reaction/SynRBL_random_seed42_rep0.csv": "dde9e8b90d5118e9931499f660b723f901bcd91915babcb085af143b43ddf150",
+    "results/main/scores/per_reaction/SynRBL_random_seed43_rep1.csv": "c0a7aad086875121b9ba222a2896d096a539ab04e2e815c9bca9fda8f58b6634",
+    "results/main/scores/per_reaction/SynRBL_random_seed44_rep2.csv": "62767ff23f9c999e9f6db361c8a4aedcc3c1522996c63c32bb4fa5af2c4f3c07",
+    "results/main/scores/per_reaction/SynRBL_random_seed45_rep3.csv": "adee764d837b10b59e28184146190e7d5079664e5157df0a9e88bedea40587e0",
+    "results/main/scores/per_reaction/SynRBL_random_seed46_rep4.csv": "676f89483ef67622e627b154d172d4602aa9015d312dbf3e128cceb4de162796",
+    "results/main/scores/per_reaction/SynRBL_group_rep0.csv": "cda6d2d92ccc95e0f9fd1a6c19ea7eacc557fc137141bc796c06493eef5a4121",
+    "results/main/scores/per_reaction/SynRBL_group_rep1.csv": "e0c80d7697ca41a58c7b597eb436b18e43893b192de21c03dc77613689616e66",
+    "results/main/scores/per_reaction/SynRBL_group_rep2.csv": "cbaa7eb9455a1455e77e93fc2afe420fb2962927d9318fe318a99769a31ead01",
+    "results/main/scores/per_reaction/SynRBL_group_rep3.csv": "5f8da54740638d33301cb93299c708ba8ffd9a1911ccf7e0e8edc9947e124047",
+    "results/main/scores/per_reaction/SynRBL_group_rep4.csv": "1a41e624f7ab6c4ec649c5555b957d120ead0a00d1a42fc5d2ec0e4732a3c9dc",
+    "results/main/scores/per_reaction/SynRBL_extreme_ood_rep0.csv": "28d48b3c49467e9c65c8c62dd815551736dc5e5459bfbeca16c76930e2c68fde",
+    "results/main/scores/per_reaction/SynRBL_extreme_ood_rep1.csv": "0c9b8ef449e089fb45d28019778d798d10b42c56f23b351282bed6962f60690b",
+    "results/main/scores/per_reaction/SynRBL_extreme_ood_rep2.csv": "8142346387a776c701f0d0fca605d320c65213b34cdc3964314ad405b0558a21",
+    "results/main/scores/per_reaction/SynRBL_extreme_ood_rep3.csv": "f129c7e219c249c879780b1938ad0cca2beee949b23bc6397b669c84e3772b5d",
+    "results/main/scores/per_reaction/SynRBL_extreme_ood_rep4.csv": "71ef0744190a87a7891d55dee116c17d55d9476e3b55ae3a104f9e146b601edc",
+    "analysis/ri_comparison/build_table_c1.py": "636ed116ffec892b87a7fa9daeef9c7658b0c7ac6d4e492a882776e0f5d84dcd",
+    "utils/scoring.py": "53875951520297b8d07eb5e4c1fd4213b3f84e6576355367806633373032ffea",
+    "utils/reaction_balance.py": "28330f9524b6cd97f34d416346404a90f640fae36da4febccf6a04c97a9529c7",
+    "src/completerxn/equivalence.py": "4fd48ec3038e0beaa8a1f6f0f37af67b6068fc3fa161cb08271a9aef2e6eb726",
+    "src/completerxn/balance.py": "23d0e329d1e099ada830256926fd4715f8534606436f46879a98eb699ac37cfe"
+  }
+}

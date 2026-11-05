@@ -1,0 +1,16 @@
+split,rep,full_n,retained_n,excluded_n
+random,0,20643,19080,1563
+random,1,20643,19037,1606
+random,2,20643,19057,1586
+random,3,20643,19047,1596
+random,4,20643,19036,1607
+group,0,20599,20173,426
+group,1,20724,16399,4325
+group,2,23111,21402,1709
+group,3,25536,25189,347
+group,4,15108,14807,301
+extreme_ood,0,2322,1492,830
+extreme_ood,1,1905,1739,166
+extreme_ood,2,1833,1687,146
+extreme_ood,3,980,854,126
+extreme_ood,4,417,386,31

@@ -1,0 +1,2 @@
+total,parseable_n,balanced_n,valid_unbalanced_n,invalid_n,hydrogen_only_n,any_hydrogen_residual_n,mean_abs_hydrogen_residual,max_length,max_length_n,max_length_invalid_n,confidence_threshold,confident_n,both_balanced_n,agreement_n,agreement_pct
+882357,612356,435124,177232,270001,170093,175623,2.8485847525665773,200,90153,86672,0.95,154313,384580,268839,69.90457122055228

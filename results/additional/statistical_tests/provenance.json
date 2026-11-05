@@ -1,0 +1,20 @@
+{
+  "metric": "v2",
+  "version": "2.3.0",
+  "rdkit": "2025.09.6",
+  "policies": {
+    "population": "filtered",
+    "aggregation": "pooled observations",
+    "test": "paired sign flip clustered by reaction UID; Holm correction",
+    "normal_approximation_above": 20
+  },
+  "sha256": {
+    "analysis/statistical_tests/test_rb_vs_crb.py": "564f99b86fa5f0cd341774c7b745a7ceb9a86bc5bd2a06e19c8b62578778b3d1",
+    "results/additional/missing_species_results/uid_model_outcomes.csv": "202cc8cc6e5dcd69257b55d0141fbcebf358967c62c840c3c9dee23981503f7b",
+    "data/Template_curated/benchmark/benchmark_final.csv": "52b94a028705e77aee0e152489fd2b6c1ebaea8470090f8b214ccd81ffa85dc0",
+    "utils/scoring.py": "53875951520297b8d07eb5e4c1fd4213b3f84e6576355367806633373032ffea",
+    "utils/reaction_balance.py": "28330f9524b6cd97f34d416346404a90f640fae36da4febccf6a04c97a9529c7",
+    "src/completerxn/equivalence.py": "4fd48ec3038e0beaa8a1f6f0f37af67b6068fc3fa161cb08271a9aef2e6eb726",
+    "src/completerxn/balance.py": "23d0e329d1e099ada830256926fd4715f8534606436f46879a98eb699ac37cfe"
+  }
+}

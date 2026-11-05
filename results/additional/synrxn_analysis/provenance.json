@@ -1,0 +1,18 @@
+{
+  "metric": "v2",
+  "version": "2.3.0",
+  "rdkit": "2020.09.1",
+  "policies": {
+    "stereo": true,
+    "requires_balance": true
+  },
+  "sha256": {
+    "data/SynRXN_complex/complex_processed.csv": "dfb19e6514ede44bd70c044639d69b1737fc4afae019d6f00956cad2e6fe7893",
+    "results/main/predictions/crb/synrxn/beamSize5_nBest5.txt": "fcb4c6806d79b5fb728299238b074fa6acba7dcaac97c35c8a4055100a4cdd92",
+    "analysis/synrxn_analysis/analyze.py": "c16460bcd4a9295d68a00c9c12ba245eec567d44ef742840aa7fee0a33501d97",
+    "utils/scoring.py": "53875951520297b8d07eb5e4c1fd4213b3f84e6576355367806633373032ffea",
+    "utils/reaction_balance.py": "28330f9524b6cd97f34d416346404a90f640fae36da4febccf6a04c97a9529c7",
+    "src/completerxn/equivalence.py": "4fd48ec3038e0beaa8a1f6f0f37af67b6068fc3fa161cb08271a9aef2e6eb726",
+    "src/completerxn/balance.py": "23d0e329d1e099ada830256926fd4715f8534606436f46879a98eb699ac37cfe"
+  }
+}

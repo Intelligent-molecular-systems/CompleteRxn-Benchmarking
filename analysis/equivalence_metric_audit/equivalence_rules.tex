@@ -1,0 +1,28 @@
+\begin{table}[t]
+\centering
+\small
+\begin{tabular}{p{0.23\linewidth}p{0.71\linewidth}}
+\hline
+Rule & Evaluation convention \\
+\hline
+Validity & Require atom, isotope, and formal-charge balance; malformed or unbalanced completions receive no positive match. \\
+Exact match & Compare canonical molecular multisets separately on both reaction sides under the selected stereochemistry policy. \\
+Acids and salts & Normalize HF/HCl/HBr/HI to proton and halide; split explicitly listed Li/Na/K/Rb/Cs halides, hydroxides, hydrides, methoxides, ethoxides, O-bound acetates, and hydrogensulfates into ions. \\
+Proton transfer & Normalize eligible N/O/S protonation states with a signed proton count. Preserve heavy-atom bonds; retain hydrides and carbon anions as distinct species. \\
+Labile byproduct & Normalize $\mathrm{HO{-}S(=O){-}Cl}$ and its conjugate base to $\mathrm{SO_2}$, chloride, and the corresponding proton count. \\
+Spectators & Cancel unchanged normalized species by count; compare the remaining signed reaction multisets, preserving stoichiometry and direction. \\
+\hline
+\end{tabular}
+\caption{Exact and equivalent matching conventions (default benchmark metric).
+Equivalent matching applies the listed conventions to one fixed normal form.
+Atom maps are ignored; isotopes are retained. Stereo-free comparison is used
+for SynRBL and model agreement; any stereo-sensitive accuracy is reported
+separately. Radical species, hydrides, boron and carbon charges, permanent ammonium ions, adjacent opposite-charge sites, and charged
+sites bonded to explicit H/D/T are not broadly neutralized. The sole decomposition exception is chlorosulfurous acid
+$\mathrm{HO{-}S(=O){-}Cl \rightarrow SO_2 + HCl}$.
+Carbonic-acid dehydration, hydride/carbanion quenching, radical recombination,
+reagent hydrolysis, activator consumption, and general tautomer or
+constitutional-isomer conversions remain distinct.
+Agreement and reference equivalence use a common reference and stereo policy.}
+\label{tab:equivalence_rules}
+\end{table}

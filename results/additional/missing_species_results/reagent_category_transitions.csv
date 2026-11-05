@@ -1,0 +1,28 @@
+category_before,category_after,reactions,percent_of_affected
+Non-carbon + carbon,Non-carbon only,32571,34.283819628647215
+Carbon only,No missing molecules,10010,10.53639846743295
+Helper + non-carbon,Non-carbon only,4741,4.990316197212749
+Helper + carbon,Carbon only,526,0.5536608984884847
+Non-carbon + carbon,No missing molecules,4669,4.914529914529915
+Helper + non-carbon + carbon,Helper only,235,0.24735800597869564
+Carbon only,Carbon only,11601,12.211064797271694
+Non-carbon only,Non-carbon only,6968,7.334428024083197
+Non-carbon + carbon,Carbon only,5385,5.668182392320324
+Non-carbon + carbon,Non-carbon + carbon,8360,8.799629489284662
+Helper only,No missing molecules,450,0.47366426676771506
+Helper + carbon,Helper + carbon,3620,3.8103658793313966
+Helper + carbon,Helper only,1355,1.4262557366005642
+Helper + non-carbon + carbon,Non-carbon + carbon,571,0.6010273251652563
+Helper + non-carbon,No missing molecules,772,0.8125973643215022
+Non-carbon only,No missing molecules,878,0.9241716138267863
+Helper + non-carbon,Helper only,494,0.5199781061850027
+Helper + carbon,No missing molecules,31,0.03263020504399815
+Helper + non-carbon + carbon,Helper + non-carbon,289,0.30419771799082146
+Helper + non-carbon + carbon,Carbon only,233,0.245252831459728
+Helper + non-carbon + carbon,No missing molecules,4,0.004210349037935245
+Helper + non-carbon,Helper + non-carbon,125,0.1315734074354764
+Helper + non-carbon + carbon,Helper + carbon,710,0.747336954233506
+Helper + non-carbon + carbon,Helper + non-carbon + carbon,375,0.3947202223064292
+Helper + non-carbon + carbon,Non-carbon only,16,0.01684139615174098
+Helper only,Helper only,7,0.0073681108163866785
+No missing molecules,No missing molecules,8,0.00842069807587049

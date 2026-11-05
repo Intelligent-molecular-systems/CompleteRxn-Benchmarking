@@ -1,0 +1,13 @@
+subset,n,balanced_n,balanced_pct,invalid_n,invalid_pct
+Zero missing atoms,46870,36672,78.24,6558,13.99
+More than 20 missing atoms,116877,24926,21.33,71519,61.19
+Carbon-free deficit,464099,280957,60.54,91633,19.74
+Carbon-bearing deficit,418258,154167,36.86,178368,42.65
+No transition metal,750067,418595,55.81,194726,25.96
+Contains transition metal,132290,16529,12.49,75275,56.9
+At most 2 left-side components,136924,91876,67.1,23916,17.47
+More than 10 left-side components,35749,5451,15.25,23119,64.67
+Single-product record,802885,404380,50.37,233833,29.12
+Multi-product record,79472,30744,38.69,36168,45.51
+Nearest similarity < 0.20,2328,909,39.05,816,35.05
+Nearest similarity ≥ 0.55,1838,1259,68.5,307,16.7

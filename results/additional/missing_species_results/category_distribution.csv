@@ -1,0 +1,9 @@
+missing_category,n,percent
+Helper only,7676,3.7185778716518993
+Non-carbon only,46219,22.39043129883782
+Carbon only,75521,36.58555490425001
+Helper + non-carbon,14847,7.192512462274069
+Helper + carbon,8136,3.9414212563522475
+Non-carbon + carbon,29732,14.403433725892947
+Helper + non-carbon + carbon,3018,1.4620463804905461
+No missing molecules,21274,10.306022100250457

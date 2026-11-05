@@ -1,0 +1,10 @@
+assessor,measure,category,count,observations,percentage
+expert,equivalence,equivalent,4,20,20.0
+expert,equivalence,not_equivalent,14,20,70.0
+expert,equivalence,uncertain,2,20,10.0
+expert,outcome,equivalent,4,20,20.0
+expert,outcome,FlowER,8,20,40.0
+expert,outcome,SynRBL,3,20,15.0
+expert,outcome,both,3,20,15.0
+expert,outcome,none,0,20,0.0
+expert,outcome,uncertain,2,20,10.0

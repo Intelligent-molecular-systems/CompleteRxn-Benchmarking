@@ -1,0 +1,6 @@
+{
+  "metric": "v1",
+  "source_report": "results/archive/metric_v1/additional/uncurated_failure_modes/results.md",
+  "source_sha256": "6615ae62588975ffb9667da7c4ac994c5dff52ed6e98c46d1d635c63c5af3a22",
+  "method": "Export of saved report tables; counts exact, percentages rounded to two decimal places; no rescoring"
+}

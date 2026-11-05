@@ -1,0 +1,4 @@
+model,n_templates,n_perfect_templates,frac_perfect_templates,n_failing_templates,total_errors,n_templates_for_50pct_errors,n_templates_for_90pct_errors,frac_templates_for_50pct_errors,frac_templates_for_90pct_errors
+RB,635,371,0.584251968503937,264,691,44,195,0.06929133858267716,0.30708661417322836
+CRB,635,513,0.8078740157480315,122,236,28,99,0.04409448818897638,0.15590551181102363
+SynRBL,635,62,0.09763779527559055,573,25333,33,240,0.05196850393700787,0.3779527559055118

@@ -1,0 +1,13 @@
+r_id,audit_label,audit_note,target_status,prediction_balanced,target_balanced,equivalent_match
+complex_1559,both plausible,"CRB gives water and unchanged sulfuric acid; SynRXN represents the same overall composition as sulfate, protons, and hydroxide. The distinction is mainly acid-base bookkeeping.",right_only,True,True,True
+complex_329,both plausible,CRB represents DIPEA and fluoride as an ammonium-fluoride salt; SynRXN leaves neutral DIPEA and HF.,right_only,True,True,True
+complex_582,both plausible,The POCl3-mediated chlorination admits different formal phosphorus-containing coproducts; the specific hydrolysis state is not established by this record.,right_only,True,True,False
+complex_814,CRB preferred,CRB accounts for stoichiometric SOCl2 consumption as SO2 and two HCl; SynRXN gives water and carries SOCl2 through unchanged.,right_only,True,True,False
+complex_414,CRB preferred,CRB accounts for HATU consumption with tetramethylurea and an HOAt-derived species; SynRXN gives water and carries HATU through unchanged.,right_only,True,True,False
+complex_1533,both plausible,"CRB gives water and neutral sodium; SynRXN gives an explicit hydrogen species, hydroxide, and sodium ion. These are alternative formal balance representations; neither establishes isolated coproducts.",right_only,True,True,False
+complex_317,both plausible,"The completions use different carbonate, bicarbonate, hydroxide, and water bookkeeping; duplicated spectator carbonate in CRB makes the detailed coproduct assignment uncertain.",right_only,True,True,True
+complex_311,both plausible,"CRB gives sulfonate plus bicarbonate; SynRXN gives sulfonic acid plus carbonate, differing by proton transfer.",right_only,True,True,True
+complex_333,both plausible,"CRB gives mesylate plus bicarbonate; SynRXN gives methanesulfonic acid plus carbonate, differing by proton transfer.",right_only,True,True,True
+complex_1,both plausible,CRB gives silyl mesylate; SynRXN gives hydrolysed silanol and methanesulfonic acid after adding water.,both_sides,True,True,False
+complex_208,SynRXN preferred,"CRB predicts methane, whereas SynRXN adds an oxygen species and gives methanol; methanol is the more plausible methoxy-derived coproduct, although the oxygen source is unspecified.",both_sides,True,True,False
+complex_14,SynRXN preferred,"CRB predicts methane, whereas SynRXN adds an oxygen species and gives methanol; methanol is the more plausible methoxy-derived coproduct, although the oxygen source is unspecified.",both_sides,True,True,False

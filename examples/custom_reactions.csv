@@ -1,0 +1,4 @@
+reaction_id,input
+boc_protection,CC(C)(C)OC(=O)OC(=O)OC(C)(C)C.CC(C)(C)OC(=O)[C@@H]1CCC(=O)N1.CN(C)c1ccncc1.ClCCl>>CC(C)(C)OC(=O)[C@@H]1CCC(=O)N1C(=O)OC(C)(C)C
+ester_saponification,COC(=O)c1cc(S(C)(=O)=O)ccc1-c1nccs1.C1COCCO1.CCO.[Na+].[OH-]>>CS(=O)(=O)c1ccc(-c2nccs2)c(C(=O)O)c1
+n_methylation,CI.CN(C)C=O.CS(=O)(=O)NCc1ccc2[nH]cc(CCN3C(=O)c4ccccc4C3=O)c2c1.[H-].[Na+]>>CN(Cc1ccc2[nH]cc(CCN3C(=O)c4ccccc4C3=O)c2c1)S(C)(=O)=O

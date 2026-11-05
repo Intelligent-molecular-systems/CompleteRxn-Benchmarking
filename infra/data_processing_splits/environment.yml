@@ -1,0 +1,20 @@
+name: data-env
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.10.19
+  - numpy=2.2.6
+  - scipy=1.15.2
+  - scikit-learn=1.7.2
+  - pandas=2.3.3
+  - tqdm=4.67.3
+  - hdbscan=0.8.41
+  - pip
+  - pip:
+    - rdkit==2025.9.5
+    - drfp==0.3.7
+    - umap-learn==0.5.11
+    - pynndescent==0.6.0
+    - matplotlib==3.10.8
+    - seaborn==0.13.2

@@ -1,0 +1,21 @@
+assessor,audit_id,Unique_identifier,completion_a_source,completion_b_source,equivalence,preference_blinded,preferred_source,outcome,confidence,notes
+expert,1,USPTO_US06358995B1_291050,FlowER,SynRBL,not_equivalent,B,SynRBL,SynRBL,Medium,B seems more plausible because it’s a straight forward ester hydrolysis giving an alcohol and a carboxylic acid. A’s product being an acetic anhydride does not really convince.
+expert,2,USPTO_US04636521_83739,FlowER,SynRBL,not_equivalent,A,FlowER,FlowER,High,"A is more plausible because it shows the deprotonation of H+ which bonds to H- to form H2,  while the reactant gets methylated. Whereas B is not convincing since its harder to remove the methyl group from the amide."
+expert,3,USPTO_US08030489B2_627482,FlowER,SynRBL,not_equivalent,B,SynRBL,SynRBL,Medium,
+expert,4,USPTO_US07820649B2_570264,FlowER,SynRBL,equivalent,none,none,equivalent,High,
+expert,5,USPTO_US07652133B2_527616,SynRBL,FlowER,not_equivalent,B,FlowER,FlowER,Medium,"In A, the reaction of Citric acid to form 2 distinct compounds does not look convincing. Whereas in B, the methylation and from Ch3I is straight forward with I- leaving and H+ getting attached to one of the O- of the ester group."
+expert,6,USPTO_US06867299B2_359150,FlowER,SynRBL,not_equivalent,A,FlowER,FlowER,Medium,
+expert,7,USPTO_US06225311B1_270620,FlowER,SynRBL,not_equivalent,A,FlowER,FlowER,Medium,"A gives a fluoride, where F⁻ attacks Si directly. B gives a silanol instead, which isn't how fluoride desilylation works."
+expert,8,USPTO_US05936000_235803,SynRBL,FlowER,not_equivalent,both,both,both,Medium,"Both are reduction reaction mechanisms,  But I am unsure of the exact mechanism."
+expert,9,USPTO_US08980904B2_889931,FlowER,SynRBL,not_equivalent,B,SynRBL,SynRBL,Low,
+expert,10,USPTO_US04812164_102870,SynRBL,FlowER,equivalent,none,none,equivalent,High,
+expert,11,USPTO_US04772703_98244,SynRBL,FlowER,equivalent,none,none,equivalent,High,
+expert,12,USPTO_US06063782_250478,SynRBL,FlowER,not_equivalent,B,FlowER,FlowER,Medium,","
+expert,13,USPTO_US07615562B2_517116,SynRBL,FlowER,uncertain,none,none,uncertain,Low,
+expert,14,USPTO_US07727988B2_547680,FlowER,SynRBL,not_equivalent,A,FlowER,FlowER,Medium,
+expert,15,USPTO_US04668697_87559,FlowER,SynRBL,not_equivalent,A,FlowER,FlowER,High,
+expert,16,USPTO_US07465815B2_477969,FlowER,SynRBL,not_equivalent,A,FlowER,FlowER,Low,Both are reduction reactions of Carbonyl group to form alcohol. NaBh4 is a strong reducing agent. But I am not sure about the exact mechanism.
+expert,17,USPTO_US08957203B2_884585,SynRBL,FlowER,uncertain,none,none,uncertain,Low,
+expert,18,USPTO_US07629358B2_521028,FlowER,SynRBL,not_equivalent,both,both,both,Low,
+expert,19,USPTO_US09156829B2_934867,SynRBL,FlowER,equivalent,none,none,equivalent,High,
+expert,20,USPTO_US08048884B2_631832,SynRBL,FlowER,not_equivalent,both,both,both,Medium,

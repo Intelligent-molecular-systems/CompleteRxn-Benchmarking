@@ -1,0 +1,5 @@
+missing_side,reactions,fraction_pct,total_missing_molecules,mean_missing_molecules,median_missing_molecules
+Product only,142570,69.06691599288838,214223,1.5025811881882585,1.0
+Both sides,42456,20.567475523560844,147907,3.4837714339551535,3.0
+Pre-product only,123,0.059586383300310526,123,1.0,1.0
+Neither,21274,10.306022100250457,0,0.0,0.0

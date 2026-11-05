@@ -1,0 +1,7 @@
+outcome,n,pct
+Balanced and parseable,435124,49.31
+Valid; hydrogen-only imbalance,170093,19.28
+Valid; other imbalance,7139,0.81
+Invalid predicted molecule,264174,29.94
+Invalid completion structure,5477,0.62
+Invalid input molecule,350,0.04

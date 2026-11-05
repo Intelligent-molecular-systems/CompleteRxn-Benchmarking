@@ -1,0 +1,1243 @@
+{
+  "@context": {
+    "@language": "en",
+    "@vocab": "https://schema.org/",
+    "citeAs": "cr:citeAs",
+    "column": "cr:column",
+    "conformsTo": "dct:conformsTo",
+    "cr": "http://mlcommons.org/croissant/",
+    "rai": "http://mlcommons.org/croissant/RAI/",
+    "prov": "http://www.w3.org/ns/prov#",
+    "data": {
+      "@id": "cr:data",
+      "@type": "@json"
+    },
+    "dataType": {
+      "@id": "cr:dataType",
+      "@type": "@vocab"
+    },
+    "dct": "http://purl.org/dc/terms/",
+    "examples": {
+      "@id": "cr:examples",
+      "@type": "@json"
+    },
+    "extract": "cr:extract",
+    "field": "cr:field",
+    "fileProperty": "cr:fileProperty",
+    "fileObject": "cr:fileObject",
+    "fileSet": "cr:fileSet",
+    "format": "cr:format",
+    "includes": "cr:includes",
+    "isLiveDataset": "cr:isLiveDataset",
+    "jsonPath": "cr:jsonPath",
+    "key": "cr:key",
+    "md5": "cr:md5",
+    "parentField": "cr:parentField",
+    "path": "cr:path",
+    "recordSet": "cr:recordSet",
+    "references": "cr:references",
+    "regex": "cr:regex",
+    "repeated": "cr:repeated",
+    "replace": "cr:replace",
+    "sc": "https://schema.org/",
+    "separator": "cr:separator",
+    "source": "cr:source",
+    "subField": "cr:subField",
+    "transform": "cr:transform",
+    "equivalentProperty": "cr:equivalentProperty",
+    "samplingRate": "cr:samplingRate",
+    "dataReleaseMaintenancePlan": "rai:dataReleaseMaintenancePlan"
+  },
+  "@type": "sc:Dataset",
+  "@id": "https://huggingface.co/datasets/Intelligent-molecular-systems/completeRXN-benchmark",
+  "name": "CompleteRXN Benchmark",
+  "alternateName": "completeRXN-benchmark",
+  "description": "CompleteRXN is a benchmark of 206,423 USPTO-derived reactions for reaction completion: given a reaction SMILES that is missing molecules, so its atoms do not balance, predict the missing molecules so that the completed reaction is balanced for atoms and charge. References come from FlowER mechanistic reactions matched to their USPTO records, with stereochemistry restored from USPTO. Three splits (random, group out-of-distribution and extreme out-of-distribution, 5 repetitions each) test generalization to increasingly unfamiliar reactions. Code, models and scoring: https://github.com/Intelligent-molecular-systems/CompleteRxn-Benchmarking",
+  "url": "https://huggingface.co/datasets/Intelligent-molecular-systems/completeRXN-benchmark",
+  "sameAs": [
+    "https://github.com/Intelligent-molecular-systems/CompleteRxn-Benchmarking",
+    "https://arxiv.org/abs/2605.00222"
+  ],
+  "citeAs": "@article{vogel2026completerxn, title={CompleteRXN: Toward Completing Open Chemical Reaction Databases}, author={Vogel, Gabriel and Noordsij, Minouk and Pidko, Evgeny and Weber, Jana M.}, journal={Advances in Neural Information Processing Systems}, volume={39}, year={2026}}",
+  "creator": [
+    {
+      "@type": "sc:Person",
+      "givenName": "Gabriel",
+      "familyName": "Vogel",
+      "name": "Gabriel Vogel",
+      "affiliation": {
+        "@type": "sc:Organization",
+        "name": "Department of Intelligent Systems, Delft University of Technology"
+      }
+    },
+    {
+      "@type": "sc:Person",
+      "givenName": "Minouk",
+      "familyName": "Noordsij",
+      "name": "Minouk Noordsij",
+      "affiliation": {
+        "@type": "sc:Organization",
+        "name": "Department of Intelligent Systems, Delft University of Technology"
+      }
+    },
+    {
+      "@type": "sc:Person",
+      "givenName": "Evgeny",
+      "familyName": "Pidko",
+      "name": "Evgeny Pidko",
+      "affiliation": {
+        "@type": "sc:Organization",
+        "name": "Department of Chemical Engineering, Delft University of Technology"
+      }
+    },
+    {
+      "@type": "sc:Person",
+      "givenName": "Jana M.",
+      "familyName": "Weber",
+      "name": "Jana M. Weber",
+      "affiliation": {
+        "@type": "sc:Organization",
+        "name": "Department of Intelligent Systems, Delft University of Technology"
+      }
+    }
+  ],
+  "publisher": {
+    "@type": "sc:Organization",
+    "name": "Intelligent Molecular Systems group, Delft University of Technology",
+    "url": "https://huggingface.co/Intelligent-molecular-systems"
+  },
+  "datePublished": "2026-04-30",
+  "dateModified": "2026-11-05",
+  "version": "1.0.0",
+  "license": "https://spdx.org/licenses/MIT.html",
+  "keywords": [
+    "chemistry",
+    "chemical reactions",
+    "SMILES",
+    "reaction completion",
+    "benchmark",
+    "USPTO",
+    "FlowER"
+  ],
+  "inLanguage": "en",
+  "isAccessibleForFree": true,
+  "isLiveDataset": false,
+  "conformsTo": "http://mlcommons.org/croissant/1.0",
+  "distribution": [
+    {
+      "@type": "cr:FileObject",
+      "@id": "repo",
+      "name": "repo",
+      "description": "The Hugging Face git repository Intelligent-molecular-systems/completeRXN-benchmark.",
+      "contentUrl": "https://huggingface.co/datasets/Intelligent-molecular-systems/completeRXN-benchmark",
+      "encodingFormat": "git+https",
+      "sha256": "https://github.com/mlcommons/croissant/issues/80"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "benchmark_final_csv",
+      "name": "benchmark_final.csv",
+      "description": "All 206,423 benchmark reactions with inputs, references and metadata. Unique_identifier links all other files.",
+      "contentUrl": "https://huggingface.co/datasets/Intelligent-molecular-systems/completeRXN-benchmark/resolve/main/benchmark_final.csv",
+      "encodingFormat": "text/csv",
+      "sha256": "52b94a028705e77aee0e152489fd2b6c1ebaea8470090f8b214ccd81ffa85dc0"
+    },
+    {
+      "@type": "cr:FileSet",
+      "@id": "random_splits_files",
+      "name": "random_splits",
+      "description": "Random split, 5 repetitions (seeds 42-46). One file per repetition. Column random_split: 0 = train, 1 = validation, 2 = test.",
+      "containedIn": {
+        "@id": "repo"
+      },
+      "encodingFormat": "text/csv",
+      "includes": "random_splits/*.csv"
+    },
+    {
+      "@type": "cr:FileSet",
+      "@id": "group_splits_files",
+      "name": "group_splits",
+      "description": "Group out-of-distribution split, built from reaction fingerprint similarity (threshold 0.55, see the paper). 5 repetitions. One file per repetition. Column group_split: 0 = train, 1 = validation, 2 = test.",
+      "containedIn": {
+        "@id": "repo"
+      },
+      "encodingFormat": "text/csv",
+      "includes": "group_splits/*.csv"
+    },
+    {
+      "@type": "cr:FileSet",
+      "@id": "extreme_ood_splits_files",
+      "name": "extreme_ood_splits",
+      "description": "Extreme out-of-distribution split, built from reaction fingerprint similarity (threshold 0.55, see the paper) and focused on reactions with large atom-imbalance. 5 repetitions. One file per repetition. Column extreme_ood: 0 = train, 1 = validation, 2 = test.",
+      "containedIn": {
+        "@id": "repo"
+      },
+      "encodingFormat": "text/csv",
+      "includes": "extreme_ood_splits/*.csv"
+    },
+    {
+      "@type": "cr:FileSet",
+      "@id": "eligibility_files",
+      "name": "eligibility",
+      "description": "Filtered test sets used in the paper: IDs of test reactions whose input and reference use only tokens in the pretrained Molecular Transformer's vocabulary. One file per split and repetition, named <split>_rep<rep>.csv.",
+      "containedIn": {
+        "@id": "repo"
+      },
+      "encodingFormat": "text/csv",
+      "includes": "eligibility/*_rep*.csv"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "eligibility_coverage_csv",
+      "name": "eligibility/coverage.csv",
+      "description": "Number of test reactions kept and excluded by the filter, per split and repetition, with the SHA-256 of each eligibility file.",
+      "contentUrl": "https://huggingface.co/datasets/Intelligent-molecular-systems/completeRXN-benchmark/resolve/main/eligibility/coverage.csv",
+      "encodingFormat": "text/csv",
+      "sha256": "017b76b74973c472bae66ddd9a1944eed965256af277981b04f71d95f4024770"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "raw_master_dataset_mapped_csv",
+      "name": "raw/master_dataset_mapped.csv",
+      "description": "Five USPTO dataset versions matched to each other by canonical SMILES. Source file for rebuilding the benchmark.",
+      "contentUrl": "https://huggingface.co/datasets/Intelligent-molecular-systems/completeRXN-benchmark/resolve/main/raw/master_dataset_mapped.csv",
+      "encodingFormat": "text/csv",
+      "sha256": "1c71d57e0c60c4e6fec31547cd5891cb971255715a0547dc501a21e71087f684"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "raw_flower_single_reactions_tsv",
+      "name": "raw/flower_full_single_reactions_with_main_products.tsv",
+      "description": "Preprocessed extract of the FlowER single-step mechanistic reactions. Source file for rebuilding the benchmark.",
+      "contentUrl": "https://huggingface.co/datasets/Intelligent-molecular-systems/completeRXN-benchmark/resolve/main/raw/flower_full_single_reactions_with_main_products.tsv",
+      "encodingFormat": "text/tab-separated-values",
+      "sha256": "774bcc82fcd152e0572db349e569d2e228cae4e0bf301f7638393101e190c982"
+    }
+  ],
+  "recordSet": [
+    {
+      "@type": "cr:RecordSet",
+      "@id": "benchmark_final",
+      "name": "benchmark_final",
+      "description": "One record per reaction. Task: given InputReaction_harmonized, predict the complete reaction; it is scored against TargetReaction_with_stereo with the equivalence metric (v2) in the code repository.",
+      "key": {
+        "@id": "benchmark_final/Unique_identifier"
+      },
+      "field": [
+        {
+          "@type": "cr:Field",
+          "@id": "benchmark_final/Unique_identifier",
+          "name": "Unique_identifier",
+          "description": "Reaction ID (e.g. USPTO_US03930836_0). Key that links the split and eligibility files.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "benchmark_final_csv"
+            },
+            "extract": {
+              "column": "Unique_identifier"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "benchmark_final/OriginalReaction",
+          "name": "OriginalReaction",
+          "description": "Original atom-mapped USPTO reaction SMILES before curation (Lowe, 2017).",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "benchmark_final_csv"
+            },
+            "extract": {
+              "column": "OriginalReaction"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "benchmark_final/PatentNumber",
+          "name": "PatentNumber",
+          "description": "Source USPTO patent number.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "benchmark_final_csv"
+            },
+            "extract": {
+              "column": "PatentNumber"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "benchmark_final/ParagraphNum",
+          "name": "ParagraphNum",
+          "description": "Paragraph or heading identifier within the patent. Text because some values are heading identifiers. Empty for some reactions.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "benchmark_final_csv"
+            },
+            "extract": {
+              "column": "ParagraphNum"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "benchmark_final/Year",
+          "name": "Year",
+          "description": "Year of the source patent.",
+          "dataType": "sc:Integer",
+          "source": {
+            "fileObject": {
+              "@id": "benchmark_final_csv"
+            },
+            "extract": {
+              "column": "Year"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "benchmark_final/TextMinedYield",
+          "name": "TextMinedYield",
+          "description": "Yield text-mined in the original USPTO extraction. Often empty.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "benchmark_final_csv"
+            },
+            "extract": {
+              "column": "TextMinedYield"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "benchmark_final/CalculatedYield",
+          "name": "CalculatedYield",
+          "description": "Yield calculated in the original USPTO extraction. Often empty.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "benchmark_final_csv"
+            },
+            "extract": {
+              "column": "CalculatedYield"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "benchmark_final/ReactionSmiles",
+          "name": "ReactionSmiles",
+          "description": "Reaction SMILES field from the original USPTO extraction.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "benchmark_final_csv"
+            },
+            "extract": {
+              "column": "ReactionSmiles"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "benchmark_final/RewrittenReaction",
+          "name": "RewrittenReaction",
+          "description": "Intermediate curation field: reaction rewritten after moving molecules between fields.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "benchmark_final_csv"
+            },
+            "extract": {
+              "column": "RewrittenReaction"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "benchmark_final/MovedMetadata",
+          "name": "MovedMetadata",
+          "description": "Intermediate curation field: JSON list of molecules moved during curation and why.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "benchmark_final_csv"
+            },
+            "extract": {
+              "column": "MovedMetadata"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "benchmark_final/MultiProduct",
+          "name": "MultiProduct",
+          "description": "Intermediate curation field: whether the reaction has several products.",
+          "dataType": "sc:Integer",
+          "source": {
+            "fileObject": {
+              "@id": "benchmark_final_csv"
+            },
+            "extract": {
+              "column": "MultiProduct"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "benchmark_final/CanonicalReaction",
+          "name": "CanonicalReaction",
+          "description": "Canonical reaction SMILES with reagents identified from the atom mapping.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "benchmark_final_csv"
+            },
+            "extract": {
+              "column": "CanonicalReaction"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "benchmark_final/IsBalanced",
+          "name": "IsBalanced",
+          "description": "Whether the original USPTO reaction was already balanced for atoms.",
+          "dataType": "sc:Boolean",
+          "source": {
+            "fileObject": {
+              "@id": "benchmark_final_csv"
+            },
+            "extract": {
+              "column": "IsBalanced"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "benchmark_final/Balance",
+          "name": "Balance",
+          "description": "Type and count of the atoms and charge missing from the original USPTO reaction.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "benchmark_final_csv"
+            },
+            "extract": {
+              "column": "Balance"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "benchmark_final/MissingMw",
+          "name": "MissingMw",
+          "description": "Molecular weight of the missing molecules.",
+          "dataType": "sc:Float",
+          "source": {
+            "fileObject": {
+              "@id": "benchmark_final_csv"
+            },
+            "extract": {
+              "column": "MissingMw"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "benchmark_final/MissingNrAtoms",
+          "name": "MissingNrAtoms",
+          "description": "Number of heavy atoms missing from the product side. Main difficulty measure in the paper.",
+          "dataType": "sc:Integer",
+          "source": {
+            "fileObject": {
+              "@id": "benchmark_final_csv"
+            },
+            "extract": {
+              "column": "MissingNrAtoms"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "benchmark_final/MissingNrCarbons",
+          "name": "MissingNrCarbons",
+          "description": "Number of carbon atoms missing from the product side.",
+          "dataType": "sc:Integer",
+          "source": {
+            "fileObject": {
+              "@id": "benchmark_final_csv"
+            },
+            "extract": {
+              "column": "MissingNrCarbons"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "benchmark_final/rxn_class",
+          "name": "rxn_class",
+          "description": "USPTO 50k reaction class (1-10).",
+          "dataType": "sc:Integer",
+          "source": {
+            "fileObject": {
+              "@id": "benchmark_final_csv"
+            },
+            "extract": {
+              "column": "rxn_class"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "benchmark_final/InvalidReason",
+          "name": "InvalidReason",
+          "description": "Intermediate curation field: reason a reaction was marked invalid. Empty in this release.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "benchmark_final_csv"
+            },
+            "extract": {
+              "column": "InvalidReason"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "benchmark_final/IsIn",
+          "name": "IsIn",
+          "description": "List of USPTO dataset versions and FlowER that contain the reaction.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "benchmark_final_csv"
+            },
+            "extract": {
+              "column": "IsIn"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "benchmark_final/1kTPLLabel",
+          "name": "1kTPLLabel",
+          "description": "Reaction template label from USPTO 1k TPL (stored as a number such as 0.0). Empty if the reaction is not in that set.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "benchmark_final_csv"
+            },
+            "extract": {
+              "column": "1kTPLLabel"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "benchmark_final/FlowER_ID",
+          "name": "FlowER_ID",
+          "description": "ID of the matched FlowER mechanistic reaction.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "benchmark_final_csv"
+            },
+            "extract": {
+              "column": "FlowER_ID"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "benchmark_final/CanonicalOriginalReaction",
+          "name": "CanonicalOriginalReaction",
+          "description": "OriginalReaction in canonical SMILES without atom mapping.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "benchmark_final_csv"
+            },
+            "extract": {
+              "column": "CanonicalOriginalReaction"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "benchmark_final/FlowER_ID_parsed",
+          "name": "FlowER_ID_parsed",
+          "description": "Intermediate matching field: parsed FlowER ID.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "benchmark_final_csv"
+            },
+            "extract": {
+              "column": "FlowER_ID_parsed"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "benchmark_final/rxn_flower",
+          "name": "rxn_flower",
+          "description": "Matched FlowER reaction (overall reaction of the mechanistic steps).",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "benchmark_final_csv"
+            },
+            "extract": {
+              "column": "rxn_flower"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "benchmark_final/rxn_reagents_identified_flower",
+          "name": "rxn_reagents_identified_flower",
+          "description": "rxn_flower with molecules unchanged by the reaction moved to the reagent field.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "benchmark_final_csv"
+            },
+            "extract": {
+              "column": "rxn_reagents_identified_flower"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "benchmark_final/moved_metadata",
+          "name": "moved_metadata",
+          "description": "JSON list of the molecules moved to the reagent field in rxn_reagents_identified_flower and why.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "benchmark_final_csv"
+            },
+            "extract": {
+              "column": "moved_metadata"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "benchmark_final/InputReaction",
+          "name": "InputReaction",
+          "description": "Incomplete, atom-unbalanced reaction as reactants>reagents>products SMILES.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "benchmark_final_csv"
+            },
+            "extract": {
+              "column": "InputReaction"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "benchmark_final/TargetReaction",
+          "name": "TargetReaction",
+          "description": "Reference: complete reaction from FlowER, balanced for atoms and charge.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "benchmark_final_csv"
+            },
+            "extract": {
+              "column": "TargetReaction"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "benchmark_final/InputReaction_canonical",
+          "name": "InputReaction_canonical",
+          "description": "Canonical SMILES version of InputReaction.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "benchmark_final_csv"
+            },
+            "extract": {
+              "column": "InputReaction_canonical"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "benchmark_final/TargetReaction_canonical",
+          "name": "TargetReaction_canonical",
+          "description": "Canonical SMILES version of TargetReaction.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "benchmark_final_csv"
+            },
+            "extract": {
+              "column": "TargetReaction_canonical"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "benchmark_final/TargetReaction_with_stereo",
+          "name": "TargetReaction_with_stereo",
+          "description": "Default reference: TargetReaction with stereochemistry restored from the USPTO record.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "benchmark_final_csv"
+            },
+            "extract": {
+              "column": "TargetReaction_with_stereo"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "benchmark_final/has_unresolved_stereo",
+          "name": "has_unresolved_stereo",
+          "description": "Whether stereochemistry could not be restored. Always false in this release, because the 147 affected reactions were excluded.",
+          "dataType": "sc:Boolean",
+          "source": {
+            "fileObject": {
+              "@id": "benchmark_final_csv"
+            },
+            "extract": {
+              "column": "has_unresolved_stereo"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "benchmark_final/n_unresolved_stereo",
+          "name": "n_unresolved_stereo",
+          "description": "Number of molecules whose stereochemistry could not be restored. Always 0 in this release.",
+          "dataType": "sc:Integer",
+          "source": {
+            "fileObject": {
+              "@id": "benchmark_final_csv"
+            },
+            "extract": {
+              "column": "n_unresolved_stereo"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "benchmark_final/InputReaction_harmonized",
+          "name": "InputReaction_harmonized",
+          "description": "Default model input, used by all models in the paper: InputReaction with extra copies of a molecule removed where the input contains more copies than the reference (at least one copy is kept).",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "benchmark_final_csv"
+            },
+            "extract": {
+              "column": "InputReaction_harmonized"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "benchmark_final/input_target_diff_harmonized",
+          "name": "input_target_diff_harmonized",
+          "description": "The molecules missing from InputReaction_harmonized, i.e. what a model has to add.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "benchmark_final_csv"
+            },
+            "extract": {
+              "column": "input_target_diff_harmonized"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "benchmark_final/input_harmonized_modified",
+          "name": "input_harmonized_modified",
+          "description": "Whether InputReaction_harmonized differs from InputReaction.",
+          "dataType": "sc:Boolean",
+          "source": {
+            "fileObject": {
+              "@id": "benchmark_final_csv"
+            },
+            "extract": {
+              "column": "input_harmonized_modified"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "benchmark_final/source_not_in_target",
+          "name": "source_not_in_target",
+          "description": "Whether the input contains molecules that do not occur in the reference.",
+          "dataType": "sc:Boolean",
+          "source": {
+            "fileObject": {
+              "@id": "benchmark_final_csv"
+            },
+            "extract": {
+              "column": "source_not_in_target"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "@type": "cr:RecordSet",
+      "@id": "random_splits",
+      "name": "random_splits",
+      "description": "Random split, 5 repetitions (seeds 42-46). One record per reaction and repetition.",
+      "field": [
+        {
+          "@type": "cr:Field",
+          "@id": "random_splits/Unique_identifier",
+          "name": "Unique_identifier",
+          "description": "Reaction ID; joins to benchmark_final/Unique_identifier.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileSet": {
+              "@id": "random_splits_files"
+            },
+            "extract": {
+              "column": "Unique_identifier"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "random_splits/rep",
+          "name": "rep",
+          "description": "Repetition (0-4), taken from the file name.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileSet": {
+              "@id": "random_splits_files"
+            },
+            "extract": {
+              "fileProperty": "filename"
+            },
+            "transform": {
+              "regex": ".*_rep(\\d+).*"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "random_splits/row_index",
+          "name": "row_index",
+          "description": "Row of the reaction in benchmark_final.csv (0-based).",
+          "dataType": "sc:Integer",
+          "source": {
+            "fileSet": {
+              "@id": "random_splits_files"
+            },
+            "extract": {
+              "column": "row_index"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "random_splits/random_split",
+          "name": "random_split",
+          "description": "0 = train, 1 = validation, 2 = test.",
+          "dataType": "sc:Integer",
+          "source": {
+            "fileSet": {
+              "@id": "random_splits_files"
+            },
+            "extract": {
+              "column": "random_split"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "@type": "cr:RecordSet",
+      "@id": "group_splits",
+      "name": "group_splits",
+      "description": "Group out-of-distribution split, built from reaction fingerprint similarity (threshold 0.55, see the paper). 5 repetitions. One record per reaction and repetition.",
+      "field": [
+        {
+          "@type": "cr:Field",
+          "@id": "group_splits/Unique_identifier",
+          "name": "Unique_identifier",
+          "description": "Reaction ID; joins to benchmark_final/Unique_identifier.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileSet": {
+              "@id": "group_splits_files"
+            },
+            "extract": {
+              "column": "Unique_identifier"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "group_splits/rep",
+          "name": "rep",
+          "description": "Repetition (0-4), taken from the file name.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileSet": {
+              "@id": "group_splits_files"
+            },
+            "extract": {
+              "fileProperty": "filename"
+            },
+            "transform": {
+              "regex": ".*_rep(\\d+).*"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "group_splits/row_index",
+          "name": "row_index",
+          "description": "Row of the reaction in benchmark_final.csv (0-based).",
+          "dataType": "sc:Integer",
+          "source": {
+            "fileSet": {
+              "@id": "group_splits_files"
+            },
+            "extract": {
+              "column": "row_index"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "group_splits/group_split",
+          "name": "group_split",
+          "description": "0 = train, 1 = validation, 2 = test.",
+          "dataType": "sc:Integer",
+          "source": {
+            "fileSet": {
+              "@id": "group_splits_files"
+            },
+            "extract": {
+              "column": "group_split"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "@type": "cr:RecordSet",
+      "@id": "extreme_ood_splits",
+      "name": "extreme_ood_splits",
+      "description": "Extreme out-of-distribution split, built from reaction fingerprint similarity (threshold 0.55, see the paper). 5 repetitions. One record per reaction and repetition.",
+      "field": [
+        {
+          "@type": "cr:Field",
+          "@id": "extreme_ood_splits/Unique_identifier",
+          "name": "Unique_identifier",
+          "description": "Reaction ID; joins to benchmark_final/Unique_identifier.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileSet": {
+              "@id": "extreme_ood_splits_files"
+            },
+            "extract": {
+              "column": "Unique_identifier"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "extreme_ood_splits/rep",
+          "name": "rep",
+          "description": "Repetition (0-4), taken from the file name.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileSet": {
+              "@id": "extreme_ood_splits_files"
+            },
+            "extract": {
+              "fileProperty": "filename"
+            },
+            "transform": {
+              "regex": ".*_rep(\\d+).*"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "extreme_ood_splits/row_index",
+          "name": "row_index",
+          "description": "Row of the reaction in benchmark_final.csv (0-based).",
+          "dataType": "sc:Integer",
+          "source": {
+            "fileSet": {
+              "@id": "extreme_ood_splits_files"
+            },
+            "extract": {
+              "column": "row_index"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "extreme_ood_splits/extreme_ood",
+          "name": "extreme_ood",
+          "description": "0 = train, 1 = validation, 2 = test.",
+          "dataType": "sc:Integer",
+          "source": {
+            "fileSet": {
+              "@id": "extreme_ood_splits_files"
+            },
+            "extract": {
+              "column": "extreme_ood"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "@type": "cr:RecordSet",
+      "@id": "eligibility",
+      "name": "eligibility",
+      "description": "Test reactions in the filtered test set used in the paper. One record per reaction, split and repetition.",
+      "field": [
+        {
+          "@type": "cr:Field",
+          "@id": "eligibility/Unique_identifier",
+          "name": "Unique_identifier",
+          "description": "Reaction ID; joins to benchmark_final/Unique_identifier.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileSet": {
+              "@id": "eligibility_files"
+            },
+            "extract": {
+              "column": "Unique_identifier"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "eligibility/split",
+          "name": "split",
+          "description": "random, group or extreme_ood, taken from the file name.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileSet": {
+              "@id": "eligibility_files"
+            },
+            "extract": {
+              "fileProperty": "filename"
+            },
+            "transform": {
+              "regex": "^(.*)_rep\\d+\\.csv$"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "eligibility/rep",
+          "name": "rep",
+          "description": "Repetition (0-4), taken from the file name.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileSet": {
+              "@id": "eligibility_files"
+            },
+            "extract": {
+              "fileProperty": "filename"
+            },
+            "transform": {
+              "regex": ".*_rep(\\d+)\\.csv$"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "@type": "cr:RecordSet",
+      "@id": "eligibility_coverage",
+      "name": "eligibility_coverage",
+      "description": "Size of the filtered test set per split and repetition.",
+      "field": [
+        {
+          "@type": "cr:Field",
+          "@id": "eligibility_coverage/split",
+          "name": "split",
+          "description": "random, group or extreme_ood.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "eligibility_coverage_csv"
+            },
+            "extract": {
+              "column": "split"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "eligibility_coverage/rep",
+          "name": "rep",
+          "description": "Repetition (0-4).",
+          "dataType": "sc:Integer",
+          "source": {
+            "fileObject": {
+              "@id": "eligibility_coverage_csv"
+            },
+            "extract": {
+              "column": "rep"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "eligibility_coverage/test_observations",
+          "name": "test_observations",
+          "description": "Number of reactions in the full test set.",
+          "dataType": "sc:Integer",
+          "source": {
+            "fileObject": {
+              "@id": "eligibility_coverage_csv"
+            },
+            "extract": {
+              "column": "test_observations"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "eligibility_coverage/evaluated",
+          "name": "evaluated",
+          "description": "Number of reactions in the filtered test set.",
+          "dataType": "sc:Integer",
+          "source": {
+            "fileObject": {
+              "@id": "eligibility_coverage_csv"
+            },
+            "extract": {
+              "column": "evaluated"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "eligibility_coverage/excluded",
+          "name": "excluded",
+          "description": "Number of test reactions excluded by the filter.",
+          "dataType": "sc:Integer",
+          "source": {
+            "fileObject": {
+              "@id": "eligibility_coverage_csv"
+            },
+            "extract": {
+              "column": "excluded"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "eligibility_coverage/sha256",
+          "name": "sha256",
+          "description": "SHA-256 of the corresponding eligibility file.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "eligibility_coverage_csv"
+            },
+            "extract": {
+              "column": "sha256"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "eligibility_coverage/source",
+          "name": "source",
+          "description": "Results file in the code repository from which the eligibility file was derived.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "eligibility_coverage_csv"
+            },
+            "extract": {
+              "column": "source"
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "rai:dataLimitations": "This benchmark is intended for chemical reaction completion on USPTO-derived reaction SMILES. It should not be interpreted as a complete or unbiased representation of all chemical reactions, all reaction conditions, or all chemistry domains. Coverage is limited by the underlying USPTO and FlowER-derived sources, extraction and canonicalization procedures, and the availability of mapped mechanistic steps. References are FlowER reactions, which may themselves be incomplete or chemically debatable for some records. Reactions whose stereochemistry could not be restored unambiguously (147) or whose input is not fully contained in the matched FlowER reaction (47) were excluded.",
+  "rai:dataBiases": "The dataset may inherit selection biases from patent-derived USPTO data, including emphasis on patented, reported, and synthetically useful reactions rather than negative results, failed reactions, or unpublished chemistry. It may also inherit biases from the source datasets, reaction extraction procedures, atom mapping, canonicalization, template labels, and FlowER mechanistic-step template curation. ",
+  "rai:personalSensitiveInformation": "The dataset consists of chemical reaction SMILES, patent numbers, years, paragraph identifiers, reaction classes, template labels and derived molecular metadata. It contains no personal or sensitive data.",
+  "rai:dataUseCases": "Intended use cases include benchmarking, training, validation, and testing of models for reaction completion: given an atom-unbalanced input reaction SMILES, predict missing molecules to produce an atom- and charge-balanced reaction.",
+  "rai:dataSocialImpact": "Potential positive impacts include improved reproducibility and standardization for reaction-completion models, better evaluation of chemistry-focused machine learning models, and clearer measurement of generalization under structural novelty. Potential risks include over-reliance on benchmark performance as evidence of real-world chemical competence, propagation of source-data biases.",
+  "rai:hasSyntheticData": false,
+  "prov:wasDerivedFrom": [
+    {
+      "@id": "https://doi.org/10.6084/m9.figshare.5104873",
+      "name": "USPTO Full, grants only, Lowe 2017"
+    },
+    {
+      "@id": "https://github.com/rxn4chemistry/rxnfp/blob/master/data/schneider50k.tsv",
+      "name": "USPTO 50k, Schneider et al. 2015"
+    },
+    {
+      "@id": "https://pubs.acs.org/doi/suppl/10.1021/acs.jcim.6b00564/suppl_file/ci6b00564_si_002.zip",
+      "name": "USPTO 50k, Schneider et al. 2016"
+    },
+    {
+      "@id": "https://ibm.ent.box.com/v/ReactionSeq2SeqDataset",
+      "name": "USPTO STEREO, Schwaller et al. 2018"
+    },
+    {
+      "@id": "https://ibm.ent.box.com/v/MappingChemicalReactions/folder/124192222443",
+      "name": "USPTO 1k TPL, Schwaller et al. 2021"
+    },
+    {
+      "@id": "https://doi.org/10.6084/m9.figshare.28359407",
+      "name": "FlowER single-step mechanistic reactions, Joung et al. 2025"
+    }
+  ],
+  "prov:wasGeneratedBy": [
+    {
+      "@type": "prov:Activity",
+      "name": "Source alignment",
+      "description": "Multiple USPTO dataset variants were aligned using RDKit canonicalization, as represented in raw/master_dataset_mapped.csv."
+    },
+    {
+      "@type": "prov:Activity",
+      "name": "FlowER mapping and target construction",
+      "description": "FlowER single-step mechanistic reactions were mapped to USPTO records and used to construct atom- and charge-balanced target reactions."
+    },
+    {
+      "@type": "prov:Activity",
+      "name": "Benchmark preprocessing",
+      "description": "Reaction SMILES were curated, canonicalized, and annotated with missing-fragment metadata, reaction class/template labels, patent provenance, and split join keys to create benchmark_final.csv."
+    },
+    {
+      "@type": "prov:Activity",
+      "name": "Benchmark split generation",
+      "description": "Random, group out-of-distribution, and extreme out-of-distribution split files were generated to evaluate generalization across structural novelty levels."
+    }
+  ],
+  "rai:dataCollection": "The benchmark is derived from public reaction datasets based on USPTO patent reactions and FlowER mechanistic reaction data. The dataset aggregates and processes existing chemical reaction records rather than collecting new data.",
+  "rai:dataPreprocessingProtocol": "Preprocessing includes source alignment, RDKit-based canonicalization, mapping of FlowER mechanistic steps to USPTO records, construction of imbalanced input reactions and balanced target reactions, stereo handling, calculation of missing-fragment metadata, and generation of random/group/extreme OOD split assignments.",
+  "rai:dataAnnotationProtocol": "No manual labels are part of the benchmark dataset: inputs, references and metadata are derived computationally from USPTO curation, atom mapping, template and class labels, and FlowER mechanistic reactions. The references were audited by chemistry annotators (three graduate and four undergraduate students with completed training in organic chemistry, hired with hourly pay): 53 benchmark reactions were each completed independently by three annotators without seeing the reference and compared with it, with disagreements adjudicated by the authors. The audit cases, anonymized completions and annotation instructions are in the code repository (analysis/expert_audits).",
+  "rai:dataReleaseMaintenancePlan": "The dataset is versioned in its Hugging Face git repository. The completerxn package pins a repository revision and checks SHA-256 hashes of all files it downloads. Corrections will be released as new revisions with a changelog in the dataset card; issues can be reported on the GitHub repository."
+}

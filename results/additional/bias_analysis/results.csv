@@ -1,0 +1,161 @@
+analysis,pool,dimension,category,value,percent
+corruption,CompleteRXN empirical,tasks,,206423.0,
+corruption,CompleteRXN empirical,missing_molecule_count,1,81056.0,39.26694215276398
+corruption,CompleteRXN empirical,missing_molecule_count,2,59734.0,28.937666829762186
+corruption,CompleteRXN empirical,missing_molecule_count,3,24227.0,11.736579741598563
+corruption,CompleteRXN empirical,missing_molecule_count,0,21274.0,10.306022100250457
+corruption,CompleteRXN empirical,missing_molecule_count,5,4128.0,1.9997771566152998
+corruption,CompleteRXN empirical,missing_molecule_count,4,14507.0,7.027802134452072
+corruption,CompleteRXN empirical,missing_molecule_count,6,504.0,0.24415883888907727
+corruption,CompleteRXN empirical,missing_molecule_count,8,206.0,0.0997950809745038
+corruption,CompleteRXN empirical,missing_molecule_count,7,708.0,0.3429850355822752
+corruption,CompleteRXN empirical,missing_molecule_count,9,43.0,0.02083101204807604
+corruption,CompleteRXN empirical,missing_molecule_count,10,32.0,0.015502148500893796
+corruption,CompleteRXN empirical,missing_molecule_count,11,3.0,0.0014533264219587934
+corruption,CompleteRXN empirical,missing_molecule_count,12,1.0,0.0004844421406529311
+corruption,CompleteRXN empirical,missing_side,right,142570.0,69.06691599288838
+corruption,CompleteRXN empirical,missing_side,both,42456.0,20.567475523560844
+corruption,CompleteRXN empirical,missing_side,none,21274.0,10.306022100250457
+corruption,CompleteRXN empirical,missing_side,left,123.0,0.059586383300310526
+corruption,CompleteRXN empirical,missing_molecule_type,noncarbon,100288.0,27.684518830761927
+corruption,CompleteRXN empirical,missing_molecule_type,helper,37653.0,10.394116818908332
+corruption,CompleteRXN empirical,missing_molecule_type,carbon,224312.0,61.92136435032974
+corruption,CompleteRXN empirical,missing_type_combination,noncarbon,46219.0,22.39043129883782
+corruption,CompleteRXN empirical,missing_type_combination,helper+noncarbon,14847.0,7.192512462274069
+corruption,CompleteRXN empirical,missing_type_combination,helper,7676.0,3.7185778716518993
+corruption,CompleteRXN empirical,missing_type_combination,none,21274.0,10.306022100250457
+corruption,CompleteRXN empirical,missing_type_combination,carbon,75521.0,36.58555490425001
+corruption,CompleteRXN empirical,missing_type_combination,noncarbon+carbon,29732.0,14.403433725892947
+corruption,CompleteRXN empirical,missing_type_combination,helper+carbon,8136.0,3.9414212563522475
+corruption,CompleteRXN empirical,missing_type_combination,helper+noncarbon+carbon,3018.0,1.4620463804905461
+corruption,CompleteRXN empirical,median_missing_atoms,,6.0,
+corruption,CompleteRXN empirical,q95_missing_atoms,,148.0,
+corruption,ChemMLM/ChemBalancer,tasks,,980591.0,
+corruption,ChemMLM/ChemBalancer,missing_molecule_count,1,980591.0,100.0
+corruption,ChemMLM/ChemBalancer,missing_side,left,497729.0,50.758063249611716
+corruption,ChemMLM/ChemBalancer,missing_side,right,482862.0,49.241936750388284
+corruption,ChemMLM/ChemBalancer,missing_molecule_type,carbon,765738.0,78.08943790020508
+corruption,ChemMLM/ChemBalancer,missing_molecule_type,noncarbon,162336.0,16.55491433227513
+corruption,ChemMLM/ChemBalancer,missing_molecule_type,helper,52517.0,5.355647767519792
+corruption,ChemMLM/ChemBalancer,missing_type_combination,carbon,765738.0,78.08943790020508
+corruption,ChemMLM/ChemBalancer,missing_type_combination,noncarbon,162336.0,16.55491433227513
+corruption,ChemMLM/ChemBalancer,missing_type_combination,helper,52517.0,5.355647767519792
+corruption,ChemMLM/ChemBalancer,median_missing_atoms,,20.0,
+corruption,ChemMLM/ChemBalancer,q95_missing_atoms,,67.0,
+corruption,van Wijngaarden,tasks,,206423.0,
+corruption,van Wijngaarden,missing_molecule_count,2,85235.0,41.291425858552586
+corruption,van Wijngaarden,missing_molecule_count,1,87961.0,42.61201513397248
+corruption,van Wijngaarden,missing_molecule_count,4,4536.0,2.1974295500016954
+corruption,van Wijngaarden,missing_molecule_count,5,1072.0,0.5193219747799421
+corruption,van Wijngaarden,missing_molecule_count,6,573.0,0.27758534659412953
+corruption,van Wijngaarden,missing_molecule_count,7,255.0,0.12353274586649743
+corruption,van Wijngaarden,missing_molecule_count,3,26640.0,12.905538626994085
+corruption,van Wijngaarden,missing_molecule_count,9,32.0,0.015502148500893796
+corruption,van Wijngaarden,missing_molecule_count,8,108.0,0.05231975119051656
+corruption,van Wijngaarden,missing_molecule_count,10,9.0,0.00435997926587638
+corruption,van Wijngaarden,missing_molecule_count,11,2.0,0.0009688842813058622
+corruption,van Wijngaarden,missing_side,both,74453.0,36.06817069803268
+corruption,van Wijngaarden,missing_side,left,63475.0,30.7499648779448
+corruption,van Wijngaarden,missing_side,right,68495.0,33.181864424022514
+corruption,van Wijngaarden,missing_molecule_type,carbon,260552.0,70.73643516080165
+corruption,van Wijngaarden,missing_molecule_type,noncarbon,84038.0,22.81520977786948
+corruption,van Wijngaarden,missing_molecule_type,helper,23752.0,6.448355061328874
+corruption,van Wijngaarden,missing_type_combination,noncarbon+carbon,49708.0,24.0806499275759
+corruption,van Wijngaarden,missing_type_combination,carbon,116380.0,56.379376329188126
+corruption,van Wijngaarden,missing_type_combination,helper,3383.0,1.638867761828866
+corruption,van Wijngaarden,missing_type_combination,noncarbon,18337.0,8.883215533152798
+corruption,van Wijngaarden,missing_type_combination,helper+carbon,10900.0,5.280419333116949
+corruption,van Wijngaarden,missing_type_combination,helper+noncarbon,2849.0,1.3801756587202008
+corruption,van Wijngaarden,missing_type_combination,helper+noncarbon+carbon,4866.0,2.357295456417163
+corruption,van Wijngaarden,median_missing_atoms,,33.0,
+corruption,van Wijngaarden,q95_missing_atoms,,85.0,
+construction,1kTPL-labelled,reactions,,118857.0,
+construction,1kTPL-labelled,helper_balance_status,unique_helper,67153.0,56.49898617666608
+construction,1kTPL-labelled,helper_balance_status,no_helper,48688.0,40.96351077345045
+construction,1kTPL-labelled,helper_balance_status,left_deficit,3016.0,2.5375030498834734
+construction,1kTPL-labelled,missing_molecule_count,1,51090.0,42.984426663974354
+construction,1kTPL-labelled,missing_molecule_count,2,32064.0,26.97695550114844
+construction,1kTPL-labelled,missing_molecule_count,0,14204.0,11.95049513280665
+construction,1kTPL-labelled,missing_molecule_count,4,6456.0,5.431737297761175
+construction,1kTPL-labelled,missing_molecule_count,5,2030.0,1.7079347451138764
+construction,1kTPL-labelled,missing_molecule_count,3,12649.0,10.64220029110612
+construction,1kTPL-labelled,missing_molecule_count,6,128.0,0.1076924371303331
+construction,1kTPL-labelled,missing_molecule_count,7,183.0,0.15396653120977308
+construction,1kTPL-labelled,missing_molecule_count,8,44.0,0.037019275263552
+construction,1kTPL-labelled,missing_molecule_count,9,6.0,0.0050480829904843635
+construction,1kTPL-labelled,missing_molecule_count,10,3.0,0.0025240414952421818
+construction,1kTPL-labelled,actual_added_molecules_exactly_match_balance_pct,,10.635469513785473,
+construction,1kTPL-labelled,net_molecular_change_matches_balance_pct,,12.3105917194612,
+construction,1kTPL-labelled,q50_actual_missing_atoms,,6.0,
+construction,1kTPL-labelled,q50_unique_helper_atoms,,2.0,
+construction,1kTPL-labelled,q90_actual_missing_atoms,,107.0,
+construction,1kTPL-labelled,q90_unique_helper_atoms,,3.0,
+construction,1kTPL-labelled,q95_actual_missing_atoms,,138.0,
+construction,1kTPL-labelled,q95_unique_helper_atoms,,3.0,
+construction,1kTPL-labelled,q99_actual_missing_atoms,,192.0,
+construction,1kTPL-labelled,q99_unique_helper_atoms,,13.0,
+construction,All CompleteRXN,reactions,,206423.0,
+construction,All CompleteRXN,helper_balance_status,unique_helper,122538.0,59.362571031328876
+construction,All CompleteRXN,helper_balance_status,no_helper,77354.0,37.473537348066834
+construction,All CompleteRXN,helper_balance_status,left_deficit,6531.0,3.1638916206042933
+construction,All CompleteRXN,missing_molecule_count,1,81056.0,39.26694215276398
+construction,All CompleteRXN,missing_molecule_count,2,59734.0,28.937666829762186
+construction,All CompleteRXN,missing_molecule_count,3,24227.0,11.736579741598563
+construction,All CompleteRXN,missing_molecule_count,0,21274.0,10.306022100250457
+construction,All CompleteRXN,missing_molecule_count,5,4128.0,1.9997771566152998
+construction,All CompleteRXN,missing_molecule_count,4,14507.0,7.027802134452072
+construction,All CompleteRXN,missing_molecule_count,6,504.0,0.24415883888907727
+construction,All CompleteRXN,missing_molecule_count,8,206.0,0.0997950809745038
+construction,All CompleteRXN,missing_molecule_count,7,708.0,0.3429850355822752
+construction,All CompleteRXN,missing_molecule_count,9,43.0,0.02083101204807604
+construction,All CompleteRXN,missing_molecule_count,10,32.0,0.015502148500893796
+construction,All CompleteRXN,missing_molecule_count,11,3.0,0.0014533264219587934
+construction,All CompleteRXN,missing_molecule_count,12,1.0,0.0004844421406529311
+construction,All CompleteRXN,actual_added_molecules_exactly_match_balance_pct,,11.831045959025884,
+construction,All CompleteRXN,net_molecular_change_matches_balance_pct,,14.988155389661037,
+construction,All CompleteRXN,q50_actual_missing_atoms,,6.0,
+construction,All CompleteRXN,q50_unique_helper_atoms,,2.0,
+construction,All CompleteRXN,q90_actual_missing_atoms,,118.0,
+construction,All CompleteRXN,q90_unique_helper_atoms,,3.0,
+construction,All CompleteRXN,q95_actual_missing_atoms,,148.0,
+construction,All CompleteRXN,q95_unique_helper_atoms,,3.0,
+construction,All CompleteRXN,q99_actual_missing_atoms,,210.0,
+construction,All CompleteRXN,q99_unique_helper_atoms,,11.0,
+construction,No 1kTPL label,reactions,,87566.0,
+construction,No 1kTPL label,helper_balance_status,unique_helper,55385.0,63.24943471210287
+construction,No 1kTPL label,helper_balance_status,no_helper,28666.0,32.73645022040518
+construction,No 1kTPL label,helper_balance_status,left_deficit,3515.0,4.014115067491949
+construction,No 1kTPL label,missing_molecule_count,1,29966.0,34.22104469771372
+construction,No 1kTPL label,missing_molecule_count,3,11578.0,13.222026814060252
+construction,No 1kTPL label,missing_molecule_count,2,27670.0,31.59902245163648
+construction,No 1kTPL label,missing_molecule_count,0,7070.0,8.07390996505493
+construction,No 1kTPL label,missing_molecule_count,5,2098.0,2.3959070872256354
+construction,No 1kTPL label,missing_molecule_count,4,8051.0,9.194207797546992
+construction,No 1kTPL label,missing_molecule_count,6,376.0,0.42939040266770206
+construction,No 1kTPL label,missing_molecule_count,8,162.0,0.18500331178768015
+construction,No 1kTPL label,missing_molecule_count,7,525.0,0.5995477696822967
+construction,No 1kTPL label,missing_molecule_count,10,29.0,0.033117876801498296
+construction,No 1kTPL label,missing_molecule_count,9,37.0,0.042253842815704726
+construction,No 1kTPL label,missing_molecule_count,11,3.0,0.0034259872553274104
+construction,No 1kTPL label,missing_molecule_count,12,1.0,0.0011419957517758033
+construction,No 1kTPL label,actual_added_molecules_exactly_match_balance_pct,,13.45385195167074,
+construction,No 1kTPL label,net_molecular_change_matches_balance_pct,,18.622524724208027,
+construction,No 1kTPL label,q50_actual_missing_atoms,,6.0,
+construction,No 1kTPL label,q50_unique_helper_atoms,,2.0,
+construction,No 1kTPL label,q90_actual_missing_atoms,,130.0,
+construction,No 1kTPL label,q90_unique_helper_atoms,,3.0,
+construction,No 1kTPL label,q95_actual_missing_atoms,,160.0,
+construction,No 1kTPL label,q95_unique_helper_atoms,,3.0,
+construction,No 1kTPL label,q99_actual_missing_atoms,,233.0,
+construction,No 1kTPL label,q99_unique_helper_atoms,,9.0,
+reagent_audit,All CompleteRXN,reactions,,206423.0,
+reagent_audit,All CompleteRXN,target_reagent_occurrences,,667598.0,
+reagent_audit,All CompleteRXN,restored_reagent_occurrences,,3919.0,
+reagent_audit,All CompleteRXN,reactions_with_restored_reagent,,2951.0,
+reagent_audit,All CompleteRXN,proton_recovered_occurrences,,107028.0,
+reagent_audit,All CompleteRXN,reactions_with_proton_recovered,,95004.0,
+construction,1kTPL universe,template_coverage,CompleteRXN_labels,698.0,
+construction,1kTPL universe,template_coverage,unique_helper_labels,574.0,
+construction,1kTPL universe,template_coverage,overlap,477.0,
+construction,1kTPL universe,template_coverage,CompleteRXN_only,221.0,
+construction,1kTPL universe,template_coverage,helper_only,97.0,

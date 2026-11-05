@@ -1,0 +1,24 @@
+{
+  "metric": "v2",
+  "version": "2.3.0",
+  "rdkit": "2025.09.6",
+  "policies": {
+    "confidence": 0.95,
+    "n_best": 5,
+    "max_length": 200,
+    "correctness_available": false,
+    "balance_source": "saved CRB cache flags"
+  },
+  "sha256": {
+    "analysis/uncurated_failure_modes/analyze.py": "844ca9283ff09a6ab2c586e36f43eb0c8cc22b73f90a477f600addb0bcdc9f45",
+    "results/main/predictions/crb/uncurated/loaded_balanced.csv": "c1d12e1b9c0236949c5cabd28c27661fe659c080a649da32aa082652c975b56c",
+    "data/Template_curated/USPTO_FlowER_raw/master_dataset_mapped.csv": "1c71d57e0c60c4e6fec31547cd5891cb971255715a0547dc501a21e71087f684",
+    "results/main/predictions/crb/uncurated/merged/beamSize5_nBest5_all.txt": "b3e48d07c7dc76a14c3fde2ef20d17dbce607d55bf9b1e3c7a929bfce66d9d46",
+    "results/additional/uncurated_stereo_free_agreement/summary.csv": "627b1650c0f33f38449b6497eb800d079adb2d8fc01a99eb937412325270890c",
+    "results/additional/benchmark_vs_uncurated/per_query.csv": "5e491ad3076f852318a3fd2d7b7a3b142e5424a79e347eaafa3586f7cf33859c",
+    "utils/scoring.py": "53875951520297b8d07eb5e4c1fd4213b3f84e6576355367806633373032ffea",
+    "utils/reaction_balance.py": "28330f9524b6cd97f34d416346404a90f640fae36da4febccf6a04c97a9529c7",
+    "src/completerxn/equivalence.py": "4fd48ec3038e0beaa8a1f6f0f37af67b6068fc3fa161cb08271a9aef2e6eb726",
+    "src/completerxn/balance.py": "23d0e329d1e099ada830256926fd4715f8534606436f46879a98eb699ac37cfe"
+  }
+}

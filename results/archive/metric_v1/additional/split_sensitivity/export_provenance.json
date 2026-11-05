@@ -1,0 +1,8 @@
+{
+  "metric": "v1",
+  "source_report": "results/archive/metric_v1/additional/split_sensitivity/results.md",
+  "source_sha256": "cea715c139f0b3aed94af2db6a9e38ca7c1bcc1699c56c57590ba77fb879bb9b",
+  "method": "Export of saved report tables; no rescoring",
+  "accuracy_decimal_places": 2,
+  "similarity_decimal_places": 3
+}

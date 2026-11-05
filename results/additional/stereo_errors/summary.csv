@@ -1,0 +1,4 @@
+split,reactions,incorrect,balanced_incorrect,stereo_only,stereo_only_pct_of_incorrect,stereo_only_pct_of_balanced_incorrect,stereo_only_pct_of_reactions,more_stereo,less_stereo,different_assignment
+random,95257,685,276,30,4.37956204379562,10.869565217391305,0.03149374849092455,20,7,3
+group,97970,2294,1446,27,1.176983435047951,1.8672199170124482,0.0275594569766255,14,9,4
+extreme_ood,6158,557,123,19,3.4111310592459607,15.447154471544716,0.3085417343293277,18,1,0

@@ -1,0 +1,11 @@
+name: reaction-completion-agentic
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.11
+  - rdkit>=2023.09.0
+  - pip
+  - pip:
+    - openai>=1.3.0
+    - requests>=2.31.0

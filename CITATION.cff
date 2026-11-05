@@ -1,0 +1,46 @@
+cff-version: 1.2.0
+message: "If you use this software or the CompleteRXN benchmark, please cite the paper below."
+title: "CompleteRXN Benchmarking"
+abstract: "Data, models and scoring code for CompleteRXN, a benchmark for completing incomplete chemical reaction equations."
+type: software
+version: 1.0.0
+license: MIT
+repository-code: "https://github.com/Intelligent-molecular-systems/CompleteRxn-Benchmarking"
+url: "https://huggingface.co/datasets/Intelligent-molecular-systems/completeRXN-benchmark"
+keywords:
+  - chemical reactions
+  - reaction completion
+  - benchmark
+  - USPTO
+authors:
+  - family-names: Vogel
+    given-names: Gabriel
+    affiliation: "Department of Intelligent Systems, Delft University of Technology"
+  - family-names: Noordsij
+    given-names: Minouk
+    affiliation: "Department of Intelligent Systems, Delft University of Technology"
+  - family-names: Pidko
+    given-names: Evgeny
+    affiliation: "Department of Chemical Engineering, Delft University of Technology"
+  - family-names: Weber
+    given-names: Jana M.
+    affiliation: "Department of Intelligent Systems, Delft University of Technology"
+preferred-citation:
+  type: conference-paper
+  title: "CompleteRXN: Toward Completing Open Chemical Reaction Databases"
+  authors:
+    - family-names: Vogel
+      given-names: Gabriel
+    - family-names: Noordsij
+      given-names: Minouk
+    - family-names: Pidko
+      given-names: Evgeny
+    - family-names: Weber
+      given-names: Jana M.
+  collection-title: "Advances in Neural Information Processing Systems"
+  volume: 39
+  year: 2026
+  identifiers:
+    - type: other
+      value: "arXiv:2605.00222"
+      description: "arXiv preprint"

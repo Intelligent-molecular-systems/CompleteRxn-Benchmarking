@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=77", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "completerxn-benchmark"
+version = "1.0.0"
+description = "Load reaction-completion benchmark splits and score completed reactions"
+readme = "README.md"
+requires-python = ">=3.10"
+license = "MIT"
+license-files = ["LICENSE"]
+dependencies = ["rdkit==2025.9.5", "huggingface_hub>=0.34,<2"]
+
+[project.optional-dependencies]
+# Kept for existing installation commands. HF downloads are included by default.
+hub = []
+test = ["pandas>=1.5", "matplotlib>=3.6", "tqdm>=4.64"]
+
+[project.scripts]
+completerxn = "completerxn.cli:main"
+
+[project.urls]
+Repository = "https://github.com/Intelligent-molecular-systems/CompleteRxn-Benchmarking"
+Dataset = "https://huggingface.co/datasets/Intelligent-molecular-systems/completeRXN-benchmark"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+completerxn = ["dataset.json"]
