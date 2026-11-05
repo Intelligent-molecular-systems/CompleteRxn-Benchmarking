@@ -483,7 +483,7 @@
           "@type": "cr:Field",
           "@id": "benchmark_final/rxn_class",
           "name": "rxn_class",
-          "description": "USPTO 50k reaction class (1-10).",
+          "description": "Reaction class (1-10, Schneider et al.), predicted by a classifier trained on the two USPTO 50k datasets.",
           "dataType": "sc:Integer",
           "source": {
             "fileObject": {
@@ -1195,11 +1195,11 @@
     },
     {
       "@id": "https://github.com/rxn4chemistry/rxnfp/blob/master/data/schneider50k.tsv",
-      "name": "USPTO 50k, Schneider et al. 2015"
+      "name": "USPTO 50k, Schneider et al. 2015 (used to train the rxn_class classifier; not redistributed)"
     },
     {
-      "@id": "https://pubs.acs.org/doi/suppl/10.1021/acs.jcim.6b00564/suppl_file/ci6b00564_si_002.zip",
-      "name": "USPTO 50k, Schneider et al. 2016"
+      "@id": "https://doi.org/10.1021/acs.jcim.6b00564.s002",
+      "name": "USPTO 50k, Schneider et al. 2016, CC BY-NC 4.0 (used to train the rxn_class classifier; not redistributed)"
     },
     {
       "@id": "https://ibm.ent.box.com/v/ReactionSeq2SeqDataset",

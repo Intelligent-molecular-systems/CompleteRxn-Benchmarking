@@ -155,7 +155,7 @@ The paper evaluates on the **filtered test set**: test reactions whose input or 
 | `MissingNrCarbons` | int | Number of carbon atoms missing from the product side |
 | `MissingMw` | float | Molecular weight of the missing molecules |
 | `Balance` | string | Type and count of the missing atoms |
-| `rxn_class` | string | USPTO reaction class label |
+| `rxn_class` | string | Reaction class (1–10, Schneider et al.), predicted by a classifier trained on the two USPTO 50k datasets |
 | `1kTPLLabel` | string | Reaction template label from USPTO 1k TPL, which groups reactions by the 1,000 most common templates. Empty if the reaction is not in that set |
 | `OriginalReaction` | string | Original USPTO reaction SMILES before curation (Lowe, 2017) |
 | `CanonicalOriginalReaction` | string | `OriginalReaction` in canonical SMILES, without atom mapping |
@@ -184,15 +184,15 @@ Download the two files in [`raw/`](https://huggingface.co/datasets/Intelligent-m
 
 ## Source data
 
-`master_dataset_mapped.csv` matches five USPTO dataset versions to each other by canonical SMILES:
+`master_dataset_mapped.csv` matches the USPTO extraction by Lowe (2017) to USPTO STEREO, USPTO 1k TPL and FlowER by canonical SMILES (column `IsIn`). The two USPTO 50k datasets are not part of the released files: they were used only to train the classifier behind `rxn_class` and for the analysis of incompleteness per reaction class in the paper.
 
 | Dataset | Reference | Download | License |
 |---|---|---|---|
 | USPTO (grants, 1976–2016) | Lowe (2017) | [figshare](https://doi.org/10.6084/m9.figshare.5104873) | CC0 |
 | USPTO 50k (2015) | Schneider et al., *JCIM* 2015 | [rxn4chemistry/rxnfp](https://github.com/rxn4chemistry/rxnfp/blob/master/data/schneider50k.tsv) | MIT (rxnfp repository) |
-| USPTO 50k (2016) | Schneider et al., *JCIM* 2016 | [ACS supporting information](https://pubs.acs.org/doi/suppl/10.1021/acs.jcim.6b00564/suppl_file/ci6b00564_si_002.zip) | No license stated |
-| USPTO STEREO | Schwaller et al., *Chem. Sci.* 2018 | [IBM Box](https://ibm.ent.box.com/v/ReactionSeq2SeqDataset) | No license stated |
-| USPTO 1k TPL | Schwaller et al., *Nat. Mach. Intell.* 2021 | [IBM Box](https://ibm.ent.box.com/v/MappingChemicalReactions/folder/124192222443) | No license stated |
+| USPTO 50k (2016) | Schneider et al., *JCIM* 2016 | [ACS supporting information](https://doi.org/10.1021/acs.jcim.6b00564.s002) | CC BY-NC 4.0 ([ACS figshare](https://acs.figshare.com/articles/dataset/What_s_What_The_Nearly_Definitive_Guide_to_Reaction_Role_Assignment/4295660)) |
+| USPTO STEREO | Schwaller et al., *Chem. Sci.* 2018 | [IBM Box](https://ibm.ent.box.com/v/ReactionSeq2SeqDataset) | No license stated (subset of Lowe, 2017) |
+| USPTO 1k TPL | Schwaller et al., *Nat. Mach. Intell.* 2021 | [IBM Box](https://ibm.ent.box.com/v/MappingChemicalReactions/folder/124192222443) | No license stated (subset of Lowe, 2017) |
 
 These datasets are derived from USPTO patent data.
 
@@ -202,7 +202,7 @@ These datasets are derived from USPTO patent data.
 
 This dataset is released under the **MIT License**, like the code repository. Keep the copyright and license notice when you redistribute it.
 
-It is derived from the sources above, which keep their own terms. The references (`TargetReaction`, `TargetReaction_with_stereo`, `rxn_flower` and derived columns) are derived from FlowER, released under the MIT License by its authors; keep their notice as well. The USPTO extraction by Lowe (2017) is CC0. The other USPTO versions state no license; from them, this dataset uses only reaction SMILES and labels (such as `rxn_class` and `1kTPLLabel`), credited in the table above.
+It is derived from the sources above, which keep their own terms. The references (`TargetReaction`, `TargetReaction_with_stereo`, `rxn_flower` and derived columns) are derived from FlowER, released under the MIT License by its authors; keep their notice as well. The USPTO extraction by Lowe (2017), the source of all reaction SMILES, is CC0. USPTO STEREO and USPTO 1k TPL state no license; from them, this dataset uses only membership (`IsIn`) and the template labels in `1kTPLLabel`. No records of the two USPTO 50k datasets are included; `rxn_class` holds predictions of our own classifier trained on them.
 
 ## Citation
 
