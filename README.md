@@ -1,5 +1,7 @@
 # CompleteRXN benchmark
 
+[![DOI](https://zenodo.org/badge/1446848331.svg)](https://doi.org/10.5281/zenodo.23982894)
+
 The CompleteRXN benchmark tests whether a model is able to add missing molecules to an incomplete chemical reaction to make the reaction atom-balanced. The benchmark compares three baseline models: Reaction Balancer (RB), Constrained Reaction Balancer (CRB), and SynRBL on random, group, and extreme out-of-distribution (OOD) splits. Each split has five repetitions. The terms used throughout this repository are explained under [Terms](#terms).
 
 The underlying [dataset is on Hugging Face](https://huggingface.co/datasets/Intelligent-molecular-systems/completeRXN-benchmark), including the exact splits used in our [paper (arXiv Version)](https://arxiv.org/abs/2605.00222). This repository contains the benchmark tools, model code, paper analyses, and compact results. A [fine-tuned CRB checkpoint](https://huggingface.co/Intelligent-molecular-systems/completeRXN-CRB) and the [files for reproducing the paper](https://huggingface.co/datasets/Intelligent-molecular-systems/completeRXN-reproduction) (saved predictions and software containers) are also on Hugging Face.
@@ -267,6 +269,8 @@ If you use CompleteRXN, please cite:
   year={2026}
 }
 ```
+
+To cite this code specifically, use its Zenodo record: [10.5281/zenodo.23982894](https://doi.org/10.5281/zenodo.23982894).
 
 ### Other work to cite
 

@@ -4,6 +4,7 @@ title: "CompleteRXN Benchmarking"
 abstract: "Data, models and scoring code for CompleteRXN, a benchmark for completing incomplete chemical reaction equations."
 type: software
 version: 1.0.0
+doi: 10.5281/zenodo.23982894
 license: MIT
 repository-code: "https://github.com/Intelligent-molecular-systems/CompleteRxn-Benchmarking"
 url: "https://huggingface.co/datasets/Intelligent-molecular-systems/completeRXN-benchmark"
